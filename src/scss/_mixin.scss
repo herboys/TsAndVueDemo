@@ -1,0 +1,131 @@
+//多行文字超出显示省略号
+@mixin ellipsisMultiline($number: 1) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $number;
+}
+//文字一行超出显示省略号
+@mixin ellipsis () {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//flex布局开始
+@mixin gmf {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}
+@mixin gmf-ai {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+
+@mixin gmf-ai-fs {
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+}
+
+@mixin gmf-ai-fe {
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+}
+
+@mixin gmf-jc {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
+
+@mixin gmf-jc-sa {
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+}
+
+@mixin gmf-jc-sb {
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+}
+
+@mixin gmf-jc-fs {
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+@mixin gmf-jc-fe {
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+@mixin gmf-as {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  align-self: center;
+}
+
+@mixin gmf-as-fe {
+  -webkit-align-self: flex-end;
+  -moz-align-self: flex-end;
+  align-self: flex-end;
+}
+
+@mixin gmf-fs {
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
+  flex-shrink: 0;
+}
+
+@mixin gmfw-w {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@mixin box-sizing {
+  box-sizing: border-box;
+}
+
+@mixin user-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin gmfd-c{
+  -webkit-flex-direction:column;
+  -moz-flex-direction:column;
+  flex-direction:column;
+}
+@mixin gmfd-r{
+  -webkit-flex-direction:row;
+  -moz-flex-direction:row;
+  flex-direction:row;
+}
+@mixin gmfd-r-r{
+  -webkit-flex-direction:row-reverse;
+  -moz-flex-direction:row-reverse;
+  flex-direction:row-reverse;
+}
+@mixin gmfn{
+  -webkit-flex:none;
+  -moz-flex:none;
+  flex:none;
+}
+@mixin gmfa {
+  -webkit-flex: auto;
+  -moz-flex: auto;
+  flex: auto;
+}
+

@@ -1,0 +1,124 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td ,textarea,input { margin:0; padding:0;  }
+address,cite,dfn,em,var, i {font-style:normal;}
+body { line-height: 1.5; font-family:'Microsoft Yahei','simsun','arial','tahoma';  color: #222; background: #eee; }
+table { border-collapse:collapse; border-spacing:0; }
+h1, h2, h3, h4, h5, h6, th { font-size: 100%; font-weight: normal; }
+button,input,select,textarea{font-size:100%;}
+fieldset,img{border:0;}
+a { text-decoration: none; color: #666; background: none }
+ul, ol { list-style: none; }
+:focus{ outline:none;}
+.clearfix{ clear: both; content: ""; display: block; overflow: hidden }
+.clear{clear: both;}
+.fl{ float: left; }
+.fr{float: right;}
+
+/*流星*/
+.liuxing {
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  background: url('~@/assets/icon/line.png') no-repeat;
+  background-size: contain;
+  z-index: 9999;
+}
+
+.liuxing1 {
+  top: 200px;
+  left: 200px;
+  z-index: 9999;
+}
+
+.liuxing2 {
+  top: 200px;
+  left: 50%;
+  margin-left: 200px;
+  z-index: 9999;
+}
+
+.liuxing3 {
+  top: 100px;
+  right: 300px;
+  z-index: 9999;
+}
+
+.liuxing4 {
+  top: 150px;
+  right: 300px;
+  z-index: 9999;
+}
+
+.liuxingFla {
+  animation: liuxing 5s ease-in infinite;
+}
+
+.liuxingFla2 {
+  animation: liuxing2 4s ease-in infinite;
+}
+
+.liuxingFla3 {
+  animation: liuxing3 3s linear infinite;
+}
+
+.liuxingFla4 {
+  animation: liuxing4 2s linear infinite;
+}
+
+/* 流星动画 */
+@keyframes liuxing {
+  0% {
+    transform: translate(200px, -200px)
+  }
+  90% {
+    transform: translate(-180px, 180px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-200px, 200px);
+    opacity: 0;
+  }
+}
+
+@keyframes liuxing2 {
+  0% {
+    transform: translate(200px, -200px)
+  }
+  90% {
+    transform: translate(-480px, 480px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-500px, 500px);
+    opacity: 0;
+  }
+}
+
+@keyframes liuxing3 {
+  0% {
+    transform: translate(200px, -200px)
+  }
+  90% {
+    transform: translate(-480px, 480px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-500px, 500px);
+    opacity: 0;
+  }
+}
+
+@keyframes liuxing4 {
+  0% {
+    transform: translate(200px, -200px)
+  }
+  90% {
+    transform: translate(-180px, 180px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-200px, 200px);
+    opacity: 0;
+  }
+}
