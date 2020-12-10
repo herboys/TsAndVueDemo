@@ -1,3 +1,11 @@
+//手机号加星
+export function processingTel(tel:string){
+    tel = "" + tel;
+    var ary = tel.split("");
+    ary.splice(3,4,"****");
+    var tel1=ary.join("");
+    return tel1
+}
 // 时间 格式化成 2018-12-12 12:12:00
 export function timestampToTime(timestamp: Date | any, dayMinSecFlag: boolean) {
     const date = new Date(timestamp);
