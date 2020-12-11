@@ -7,7 +7,7 @@ export function processingTel(tel:string){
     return tel1
 }
 // 时间 格式化成 2018-12-12 12:12:00
-export function timestampToTime(timestamp: Date |s any, dayMinSecFlag: boolean) {
+export function timestampToTime(timestamp: Date | any, dayMinSecFlag: boolean) {
     const date = new Date(timestamp);
     const Y = date.getFullYear() + "-";
     const M =
