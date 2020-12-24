@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>homePage--1 {{foo}}</div>
-
+        <input v-model="fooReactive">
         <div>
             在ProvideInjectPage页面使用
             Provide,ProvideReactive定义数据,
