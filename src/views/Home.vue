@@ -11,7 +11,7 @@
         <HomePage2/>
         <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
         <!--流星-->
-        <!--        <div class="liuxing liuxing1 liuxingFla"></div>-->
+        <!--        <div class="liuxing liuxing1 liuxingFla"></div>-->r
         <!--        <div class="liuxing liuxing2 liuxingFla2"></div>-->
         <!--        <div class="liuxing liuxing3 liuxingFla3"></div>-->
         <!--        <div class="liuxing liuxing4 liuxingFla4"></div>-->
